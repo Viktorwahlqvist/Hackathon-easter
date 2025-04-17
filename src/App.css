@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(255, 255, 149);
+}
+
+p {
+  margin: 10px;
+}
+
+button {
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background-color: white;
+  text-align: center;
+  margin: 5px;
+  width: 70px;
+  height: 90px;
+  box-shadow: inset -10px -10px rgba(0, 0, 0, 0.1);
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+}
